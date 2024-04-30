@@ -57,7 +57,7 @@ header .logo{
 }
 
 #nuestros-programas{
-    background-color: rgb(30,30,30);
+    background-color: rgb(169, 16, 16);
     color: white;
     text-align: center;
     padding: 150px 0;
@@ -73,16 +73,17 @@ header .logo{
 }
 
 .carta{
+    margin-top: 100px;
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
-    margin-bottom: 30px;
-    border-radius: 15px;
+    margin-bottom: 150px;
+    border-radius: 25px;
 }
 
 #caracteristicas{
-    background-color: rgb(30,30,30);
-    color: white;
+    background-color: rgb(241, 227, 227);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 50px 0;
 }
