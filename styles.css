@@ -46,7 +46,7 @@ button:hover{
 
 /* pomerle color al haeader */
 header{
-    background-color:#DF0202 ;
+    background-color:whitesmoke;
     
 }
 /* para moficar el logo */
@@ -90,39 +90,7 @@ header a{
 header a:hover{
     color: yellow;
 }
-/*  */
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#hero h1{
-    color: white;
-}
-
-#hero button{
-    font-size: 1.75em;
-}
-
-#somos-proya .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
+/**************************************/
 #nuestros-programas{
     background-color: rgb(30,30,30);
     color: white;
@@ -156,7 +124,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/front-end.jpg");
+    ,url("repuestos.jpg");
 
 }
 
@@ -166,7 +134,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/full-stack.jpg");
+    ,url("aceites.png");
 }
 
 .carta:nth-child(3){
@@ -175,19 +143,10 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/python.jpg");
+    ,url("llantas.png");
 
 }
 
-#caracteristicas .container{
-    text-align: center;
-    padding: 250px 12px;
-}
-
-#caracteristicas li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
 
 #final{
     display: flex;
@@ -224,6 +183,7 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+/* ********************* para movil hasta aqui  ******************************* */
 
 @media (min-width: 850px){
     header{
@@ -244,33 +204,6 @@ footer .container{
 
     #hero h1{
         font-size: 5em;
-    }
-
-    #somos-proya .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-proya .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-proya h2{
-        margin-top: 0px;
-    }
-
-    #somos-proya .img-container{
-        background-image: url("media/somos-proya.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px; 
     }
 
     #nuestros-programas .programas{
@@ -306,7 +239,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/front-end-cropped.jpg");
+        ,url("repuestos.jpg");
 
     }
 
@@ -316,7 +249,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/full-stack-cropped.jpg");
+        ,url("aceites.png");
     }
 
     .carta:nth-child(3){
@@ -325,7 +258,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/python-cropped.jpg");
+        ,url("llantas.png");
 
     }
 
