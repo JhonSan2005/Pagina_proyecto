@@ -150,42 +150,53 @@ footer .container{
                     </div>
                 </div>
                 <div class="col-md-4 col-12 d-flex justify-content-end align-items-center" style="padding-top: 8%; padding-right: 10%;">
-                    <div class="d-flex align-items-center">
-                        <img src="imganes/perfil.png" alt="" width="50px" class="me-3">
-    <p id="timer">00:00</p>
-    <script>
-        // Inicializar variables
-        let seconds = 0;
-        let minutes = 0;
-        let timerInterval;
+                  <div class="menu-container">
+                            <button class="menu-button">Home</button>
+                            <div class="menu-content">
+                              <a href="editar_perfil.html" class="menu-item">Editar Perfil</a>
+                              <a href="index.html" class="menu-item">Cerrar sesión</a>
+                            </div>
+                          </div>
 
-        // Función para actualizar el cronómetro
-        function updateTimer() {
-            seconds++;
-            if (seconds === 60) {
-                seconds = 0;
-                minutes++;
-            }
-            document.getElementById("timer").textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-        }
+        <style>
+            .menu-container {
+  position: relative;
+  display: inline-block;
+}
 
-        // Iniciar el cronómetro automáticamente cuando se carga la página
-        function startTimer() {
-            timerInterval = setInterval(updateTimer, 1000);
-        }
+.menu-button {
+  background-color: #ddd;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
 
-        // Detener el cronómetro
-        function stopTimer() {
-            clearInterval(timerInterval);
-        }
+.menu-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
-        // Iniciar el cronómetro cuando se carga la página
-        window.onload = startTimer;
-    </script>
-    <a href="index.html">
-        <span class="badge badge-pill badge-dark">Cerrar Sesion</span>
-</a>
-                    </div>
+.menu-container:hover .menu-content {
+  display: block;
+}
+
+.menu-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+        </style>
                 </div>
             </div>
         </div>
@@ -193,7 +204,13 @@ footer .container{
 </body>
 </html>
     <section id="nuestros-programas">
-        <div class="container">
+      <div class="container" style="margin-top: auto;">
+    <h2></h2>
+    <div class="row">
+        <!-- Contenido de las categorías -->
+    </div>
+</div>
+
             <h2>CATEGORIAS</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-6 mb-4">
